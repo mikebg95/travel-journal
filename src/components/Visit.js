@@ -17,14 +17,14 @@ const Visit = ({ item }) => {
     return (
         <div className="Visit">
             <div className="img-container">
-                <img src={imageUrl} />
+                <img src={imageUrl} alt="" />
             </div>
 
             <div className="information">
                 <div className="location">
                     <i class="fa-solid fa-location-dot" />
                     <span>{location.toUpperCase()}</span>
-                    <a href={googleMapsUrl} className="url">View on Google Maps</a>
+                    <a href={googleMapsUrl} className="url" target="_blank" rel="noreferrer">View on Google Maps</a>
                 </div>
 
                 <h2>{title}</h2>
